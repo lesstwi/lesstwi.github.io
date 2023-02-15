@@ -7,19 +7,9 @@
     <link rel="stylesheet" href="index.css">
     <script>
 var userAgent = window.navigator.userAgent.toLowerCase();
-    
-if(userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1) {
+var isIE = (ua.indexOf('msie') >= 0 || ua.indexOf('trident') >= 0);
+if (isIE) {
   window.location.href('https://less-log.com/eos-ie/')
-}else if(userAgent.indexOf('edge') != -1) {
-    //旧Edge向けの記述
-}else if(userAgent.indexOf('chrome') != -1) {
-    //Google Chrome向けの記述
-}else if(userAgent.indexOf('safari') != -1) {
-    //Safari向けの記述
-}else if(userAgent.indexOf('firefox') != -1) {
-    //FireFox向けの記述
-}else{
-    //その他のブラウザ向けの記述
 }
     </script>
 <style type="text/css">
